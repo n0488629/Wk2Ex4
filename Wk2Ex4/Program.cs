@@ -18,14 +18,17 @@ namespace Wk2Ex4
             Console.WriteLine("3. Withdraw");
             Console.WriteLine("4. Exit");
             Console.Write("Choose an option: ");
+            
             // Convert user input to integer.
             int option = Convert.ToInt32(Console.ReadLine());
+            
             // set initial balance and initialize it.
             double balance = 1000;
-
+            // intialize boolean for while loop
+            bool exit = false;
+           
             // To keep the user in the bank app. 
-            while (option < 4)
-
+            while (exit == false)
             {
                 // switch to compare option variable to cases.
                 switch (option)
@@ -88,7 +91,13 @@ namespace Wk2Ex4
                             // break to exit case
                             break;
                         }
-                    default: { break; } // default case if the user want to exit or presses any other key
+                     case 4:
+                        {
+                            Console.WriteLine("Thanks for using the bank!");
+                             exit = true;
+                             break;
+                        }
+                    default: { break; } // default case if the user presses any other key
                 }
             }
         }
