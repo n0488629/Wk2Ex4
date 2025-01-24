@@ -49,7 +49,7 @@ namespace Wk2Ex4
                     case 2:
                         {
                             // Prompts user to enter deposit amount.
-                            Console.WriteLine("Enter a deposit amount: ");
+                            Console.Write("Enter a deposit amount: ");
                             // initialize deposit value from user and turn into variable.
                             double deposit = Convert.ToDouble(Console.ReadLine());
                             // Calculate new sum of the balance.
@@ -71,13 +71,13 @@ namespace Wk2Ex4
                     case 3:
                         {
                             // Prompt user for withdraw amount.
-                            Console.WriteLine("Enter withdraw amount");
+                            Console.Write("Enter withdraw amount: ");
                             // Initialize and collect withdraw variable
                             double withdraw = Convert.ToDouble(Console.ReadLine());
                             // Calculate new balance sum
                             balance -= withdraw;
                             // Display bank menu
-                            Console.WriteLine("Withdrawel successful");
+                            Console.WriteLine("Withdrawal successful");
                             Console.WriteLine("ATM Menu:");
                             Console.WriteLine("1. Check Balance");
                             Console.WriteLine("2. Deposit");
